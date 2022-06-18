@@ -1,0 +1,50 @@
+.osnov_pole .info_pole .image_web_html_css_js {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.osnov_pole .info_pole .image_web_html_css_js img {
+    width: 600px;
+    height: 300px;
+}
+
+.osnov_pole .info_pole .podokno_for_information_okno_v2_for_info_panel {
+    width: calc(100% - 240px);
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 25px;
+}
+
+.osnov_pole .info_pole .podokno_for_information_okno_v2_for_info_panel p {
+    text-align: center;
+}
+
+
+/*Media*/
+
+@media screen and (max-width:485px) {
+    .osnov_pole .info_pole .podokno_for_information_okno_v2_for_info_panel {
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+
+/*Media for image*/
+
+@media screen and (min-width:341px) and (max-width: 980px) {
+    .osnov_pole .info_pole .image_web_html_css_js img {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .osnov_pole .info_pole .image_web_html_css_js img {
+        width: 150px;
+        height: 75px;
+    }
+}

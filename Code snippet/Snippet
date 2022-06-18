@@ -1,0 +1,44 @@
+<!--Контейнеры с определениями-->
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>Термин</vid_zag_opedelenie> – определение
+                </p>
+            </div>
+
+<!--Контейнеры с определениями v2-->
+            <div class="vashnoe_videlenie"><p>Текст</p></div>
+
+<!--Контейнер с дополняющей информацией-->
+            <div class="vashno">
+                <div class="vid_zag_vashno">
+                    <p>Пример:</p>
+                </div>
+                <div>
+                    <p>Текст</p>
+                </div>
+            </div>
+
+<!--Информационное окно в info_panel-->
+            <div class="information_okno_for_info_panel">
+                <p>Текст</p>
+            </div>
+
+<!--Информационное окно v2 в info_panel-->
+            <div class="information_okno_v2_for_info_panel">
+                <p>HTML</p>
+            </div>
+<!--CSS for delete-->
+.delete{
+    display:none;
+}
+
+<!--Нижние кнопки-->
+            <div class="perehod_in_page">
+                <form action="#">
+                    <input type="submit" value="Назад" disabled>
+                </form>
+
+                <form action="#">
+                    <input type="submit" value="Дальше">
+                </form>
+            </div>

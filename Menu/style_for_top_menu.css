@@ -1,0 +1,38 @@
+.block_for_top_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+}
+
+.block_for_top_menu a {
+    color: var(--color_text_in_zagolovok_in_bok_menu);
+    text-decoration: none;
+}
+
+.block_for_top_menu a div {
+    width: 250px;
+    text-align: center;
+    padding: 5px;
+    font-family: "Acme";
+    font-weight: 700;
+    clip-path: polygon(25% 0%, 100% 0%, 82% 100%, 4% 100%);
+    background: var(--fon_zagolovok_in_bok_menu);
+}
+
+.block_for_top_menu a:hover {
+    color: var(--color_text_hover_in_spisok_bok_menu);
+}
+
+.block_for_top_menu a:active {
+    filter: brightness(80%);
+}
+
+.block_for_top_menu a div:hover {
+    background: var(--color_for_fon_in_spisok_bok_menu2);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

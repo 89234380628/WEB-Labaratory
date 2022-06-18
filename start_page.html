@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="./Basic CSS/CSS_for_page.css">
+    <link rel="stylesheet" href="./Basic CSS/Start_Page/style_for_start_page.css">
+    <link rel="stylesheet" href="./Menu/style_for_top_menu.css">
+
+    <!--Media CSS-->
+    <link rel="stylesheet" href="./Basic CSS/media_for_style_for_page.css">
+
+    <!--Библиотека CSS бокового меню-->
+    <link rel="stylesheet" href="./Menu/style_for_bok_menu.css">
+    <!-------------------------------->
+
+    <!--Linlk Script library-->
+    <script src="./Script_library/link_html.js"></script>
+
+
+    <!--Link CSS_fonts-->
+    <link rel="stylesheet" href="./Fonts/CSS_fonts.css">
+    <!------------------->
+
+    <!--Link CSS color-->
+    <link rel="stylesheet" href="./Basic CSS/Color/Light_color_for_css.css">
+    <!------------------->
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./Favicon/Favicon.png" type="image/png">
+    <!------------------->
+
+    <title>WEB - labaratory. Урок 1. Введение в WEB - разработку</title>
+</head>
+
+<body>
+    <!--LINK SCRIPT-->
+    <script>
+        $(function() {
+            $("#conteyner_for_bok_menu").load("./Menu/bok_menu.html");
+            $("#conteyner_for_mobile__bok_menu").load("./Menu/mobile_menu.html");
+            $("#conteyner_for_top_menu").load("./Menu/top_menu.html");
+
+        });
+    </script>
+    <script src="./Script_library/script_mobile_menu.js"></script>
+    <!------------------------------>
+
+    <div id="conteyner_for_mobile__bok_menu"></div>
+    <div id="conteyner_for_top_menu"></div>
+
+    <div class="osnov_pole">
+        <!--Link DOM menu-->
+        <div id="conteyner_for_bok_menu"></div>
+        <!--<div id="conteyner_for_mobile__bok_menu"></div>-->
+
+        <div class="info_pole">
+            <div class="zagolovok_bok_menu_for_info_pole">
+                <p>Урок 1. Введение в WEB - разработку</p>
+            </div>
+
+            <p class="zagolovok_info_pole">Для того,чтобы начать говорить про WEB - разработку и про WEB - технологии в целом необходимо понимать, а так же знать следующие понятия:</p>
+
+            <!--Контейнеры с определениями-->
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>Интернет</vid_zag_opedelenie> – это всемирная компьютерная сеть, предназначенная для хранения, обработки и передачи информации.
+                </p>
+            </div>
+
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>Домен</vid_zag_opedelenie> - это буквенное отображение вашего сайта, по которому пользователь вас находит в сети. Вы покупаете его на определенный срок у Регистратора (компания, которая заведует доменами).
+                </p>
+            </div>
+
+            <!--Контейнер с дополняющей информацией-->
+            <div class="vashno">
+                <div class="vid_zag_vashno vid_zag_vashno_dop">
+                    <p>Пример</p>
+                </div>
+                <div>
+                    <p>Один из самых известных ресторанов быстрого питания в России имеет следующий домен: <b><u>kfc.ru</u></b></p>
+                </div>
+            </div>
+
+            <!--Контейнеры с определениями-->
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>Хостинг</vid_zag_opedelenie> - то место на диске некоего сервера, где лежит ваш сайт. Вы арендуете его на время у хостера (компания, которая предлагает услуги хостинга) для того, чтобы ваш сайт был виден в сети.
+                </p>
+            </div>
+
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>SSL (HTTP/S) сертификат</vid_zag_opedelenie> - цифровой сертификат, удостоверяющий подлинность веб-сайта и позволяющий использовать зашифрованное соединение. Аббревиатура SSL означает Secure Sockets Layer – протокол безопасности, создающий
+                    зашифрованное соединение между веб-сервером и веб-браузером.
+                </p>
+            </div>
+
+            <p class="podzagolovok_info_pole">Процесс работы SSL сертификата:</p>
+            <ol class="spisok_perechislenie">
+                <li>Браузер или сервер пытается подключиться к веб-сайту (веб-серверу), защищенному с помощью SSL</li>
+                <li>Браузер или сервер запрашивает идентификацию у веб-сервера</li>
+                <li>В ответ веб-сервер отправляет браузеру или серверу копию своего SSL-сертификата</li>
+                <li>Браузер или сервер проверяет, является ли этот SSL-сертификат доверенным. Если это так, он сообщает об этом веб-серверу</li>
+                <li>Затем веб-сервер возвращает подтверждение с цифровой подписью и начинает сеанс, зашифрованный с использованием SSL</li>
+                <li>Зашифрованные данные используются совместно браузером или сервером и веб-сервером</li>
+            </ol>
+
+            <!--Контейнеры с определениями-->
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>URL</vid_zag_opedelenie> - Это адрес страницы в сети. URL состоит из протокола, домена и пути к странице.
+                </p>
+            </div>
+
+            <!--Контейнер с дополняющей информацией-->
+            <div class="vashno delete">
+                <div class="vid_zag_vashno vid_zag_vashno_dop">
+                    <p>Пример</p>
+                </div>
+                <div>
+                    <p>URL: <b>https://www.kfc.ru/restaurants</b>, где:
+                        <p><b>https://</b> - протокол</p>
+                        <p><b>www.kfc.ru</b> - Домен</p>
+                        <p><b>/restaurants</b> - путь к странице</p>
+                </div>
+            </div>
+
+            <!--Контейнеры с определениями-->
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>Система управления контентом сайта (CMS)</vid_zag_opedelenie> - программное обеспечение для быстрой публикации текста, картинок и других материалов на сайте.
+                </p>
+            </div>
+
+            <!--Контейнер с дополняющей информацией-->
+            <div class="vashno">
+                <div class="vid_zag_vashno">
+                    <p>Важно</p>
+                </div>
+                <div>
+                    <p>Наиболее популярная CMS - <b>Wordpress</b>. Она позволяет без программирования создавать довольно функциональные сайты.<br><br>При этом у <b>Wordpress</b> есть и свои минусы: Низкое быстродействие, "дыры" (ошибки) безопасности в плагинах.
+                    </p>
+                </div>
+            </div>
+
+            <!--Контейнеры с определениями-->
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>Движок сайта</vid_zag_opedelenie> - программное обеспечение, на котором работает сайт.
+                </p>
+            </div>
+
+            <!--Контейнер с дополняющей информацией-->
+            <div class="vashno">
+                <div class="vid_zag_vashno">
+                    <p>Важно</p>
+                </div>
+                <div>
+                    <p>
+                        Движком может быть типовая система управления контентом (CMS), например: <b>Wordpress</b>. <br><br>Либо это может быть самописная система (созданная специально под проект на некотором <b>фреймворке</b>).
+                    </p>
+                </div>
+            </div>
+
+            <!--Контейнеры с определениями-->
+            <div class="opedelenie_for_info_pole">
+                <p>
+                    <vid_zag_opedelenie>Язык программирования</vid_zag_opedelenie> - способ описания работы приложения в виде специального текста.
+                </p>
+            </div>
+
+            <p class="zagolovok_info_pole" style="margin-top: 50px; margin-bottom: 50px;">Технологии веб-разработки</p>
+
+            <!--Картинка для заголовка-->
+            <div class="image_web_html_css_js">
+                <img src="./Materials/Image/Start_page/html_css_js.png" alt="HTML_CSS_JS">
+            </div>
+
+            <p class="podzagolovok_info_pole">Front-end (интерфейсные) технологии:</p>
+
+            <!--Информационное окно в info_panel-->
+            <div class="information_okno_for_info_panel" style="margin-bottom: 25px;">
+                <p><b>Интерфейсные технологии</b> предназначены для «клиентской стороны» вашего веб-сайта или приложения. Они используются для разработки интерактивных компонентов вашего сайта и создания элементов, которые пользователи видят и с которыми
+                    взаимодействуют. Сюда входят цвета и стили текста, изображения, кнопки и меню навигации.</p>
+            </div>
+
+            <!--Информационное окно v2 в info_panel-->
+            <div class="information_okno_v2_for_info_panel">
+                <p>HTML</p>
+            </div>
+
+            <div class="podokno_for_information_okno_v2_for_info_panel">
+                <div class="vashnoe_videlenie">
+                    <p><b>HTML</b> - язык гипертекстовой разметки.</p>
+                </div>
+                <br>
+                <p>Это одна из фундаментальных технологий, необходимых для веб-разработки. Он обеспечивает базовую структуру веб-страницы. <br><br>Код HTML гарантирует, что весь контент на сайте правильно отформатирован. Это сделано для того, чтобы ваш интернет-браузер
+                    мог отображать контент, как задумано. Без HTML браузер не может отображать текст или загружать изображения и другие элементы.
+                </p>
+            </div>
+
+            <!--Информационное окно v2 в info_panel-->
+            <div class="information_okno_v2_for_info_panel">
+                <p>CSS</p>
+            </div>
+            <div class="podokno_for_information_okno_v2_for_info_panel">
+                <div class="vashnoe_videlenie">
+                    <p><b><u>Каскадные таблицы стилей (CSS)</u></b> - формальный язык описания внешнего вида документа, написанного с использованием языка разметки <b>HTML</b>.</p>
+                </div><br>
+                <p>В то время как <b>HTML</b> используется для структурирования веб-страницы, <b>CSS</b> определяет внешний вид этой структуры. Это включает макеты страниц, цвета, шрифты и расположение элементов.</p>
+            </div>
+
+            <p class="podzagolovok_info_pole">Back-end (серверные) технологии:</p>
+            <div class="information_okno_for_info_panel" style="margin-bottom: 50px;">
+                <p><b>Внутренние технологии</b> предназначены для «серверной части» вашего сайта или приложения. Они хранят и упорядочивают данные и следят за тем, чтобы на интерфейсе всё работало. <br><br>Например, когда пользователь предоставляет учетные
+                    данные для входа в приложение социальной сети, используются внутренние технологии для проверки правильности этих учетных данных. После проверки учетных данных сервер отправит обратно имя профиля, изображение и другую связанную информацию.</p>
+            </div>
+
+            <!--Информационное окно v2 в info_panel-->
+            <div class="information_okno_v2_for_info_panel">
+                <p>JavaScript (JS)</p>
+            </div>
+            <div class="podokno_for_information_okno_v2_for_info_panel">
+                <div class="vashnoe_videlenie">
+                    <p><b><u>JavaScript</u></b> - это язык управления элементами на сайте. Он умеет красить кнопки, запускать анимации, загружать эффекты, и всё это — без перезагрузки страницы.</p>
+                </div><br>
+                <p>Для реализации определенных задач, этот язык программирования можно использовать как и для интерфейсной, так и для серверной части вашего WEB - сайта.</p>
+            </div>
+
+            <div class="information_okno_v2_for_info_panel">
+                <p>PHP</p>
+            </div>
+            <div class="podokno_for_information_okno_v2_for_info_panel">
+                <div class="vashnoe_videlenie">
+                    <p><b><u>PHP</u></b> - это серверный язык программирования, предназначенный "оживлять" HTML страницы.</p>
+                </div><br>
+                <p>РНР позволяет изменять веб-страницу на сервере непосредственно перед тем, как она будет отправлена браузеру в отличии от HTML который показывает статичные данные и не может их менять.</p><br>
+                <p>В ходе исполнения PHP может изменить или динамически создать любой HTML-код, который и является результатом исполнения сценария. Затем сервер отправляет этот код браузеру. При этом браузеру не известно, как была сформирована данная страница
+                    — статично сверстана верстальщиком, или динамически создана при участии PHP. Это не важно, т.к. браузер всегда работает только с тем, что получил от сервера.</p>
+            </div>
+
+            <div class="information_okno_v2_for_info_panel">
+                <p>Python</p>
+            </div>
+            <div class="podokno_for_information_okno_v2_for_info_panel">
+                <div class="vashnoe_videlenie">
+                    <p><b><u>Python</u></b> - универсальный язык программирования, применимый в том числе и в WEB. С технической точки зрения web-приложение на Python — полноценное приложение, загруженное в память, обладающее своим внутренним состоянием,
+                        сохраняемым от запроса к запросу.</p>
+                </div><br>
+                <p>При использовании PHP возникают ряд проблем приобработке данных, так как он "живет" только при выполнении запросов. В отличие от него, Python же web - приложение, которое постоянно находится в память, обрабатывая множество запросов без
+                    "перезагрузки" страницы, тем самым позволяет исключить проблеммы при обработки данных в PHP.</p>
+            </div>
+
+            <div class="information_okno_v2_for_info_panel">
+                <p>Rust</p>
+            </div>
+            <div class="podokno_for_information_okno_v2_for_info_panel" style="margin-bottom: 50px;">
+                <div class="vashnoe_videlenie">
+                    <p><b><u>Rust</u></b> - это новый язык, ориентированный на безопасность и особенно безопасный параллелизм. </p>
+                </div><br>
+                <p>Параллелизм в разработке программного обеспечения означает набор методов, которые позволяют компьютерной программе выполнять несколько различных задач одновременно. Безопасный параллелизм дает вам эффективность, необходимую для выполнения
+                    нескольких задач, сохраняя при этом безопасность вашего кода. </p>
+            </div>
+
+            <div class="perehod_in_page">
+                <form action="#">
+                    <input type="submit" value="Назад" disabled>
+                </form>
+
+                <form action="./Materials/Lesson/Lesson_2.html">
+                    <input type="submit" value="Дальше">
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

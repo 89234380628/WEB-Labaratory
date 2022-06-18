@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--color_for_fon_page1);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color_for_fon_page2), var(--color_for_fon_page1));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color_for_fon_page2), var(--color_for_fon_page1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 18px;
+}
+
+#conteyner_for_mobile__bok_menu {
+    display: none;
+}
+
+#conteyner_for_top_menu {
+    display: block;
+    padding-top: 50px;
+}
+
+.osnov_pole {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 85px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.osnov_pole .info_pole {
+    height: 80%;
+    width: 60%;
+    overflow: auto;
+    background: var(--color_for_info_pole);
+    border-radius: 25px;
+    /*padding-bottom: 50px;*/
+    overflow: auto;
+    /* firefox */
+    scrollbar-width: none;
+}
+
+.osnov_pole .info_pole::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.osnov_pole .info_pole .zagolovok_bok_menu_for_info_pole p {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: var(--color_for_fon_in_spisok_bok_menu2);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--color_text_hover_in_spisok_bok_menu);
+    font-weight: 700;
+    font-family: "Vollkorn";
+    font-size: 30px;
+    border: 25px 25px 0 0;
+    margin-bottom: 50px;
+}
+
+.osnov_pole .info_pole .zagolovok_info_pole {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    color: var(--osnov_color_in_info_pole);
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "Russo One";
+}
+
+.osnov_pole .info_pole .podzagolovok_info_pole {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 25px;
+    color: var(--osnov_color_in_info_pole);
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Russo One";
+}
+
+.osnov_pole .info_pole .opedelenie_for_info_pole {
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    margin-right: 30px;
+    background: var(--fon_zagolovok_in_bok_menu);
+    margin-bottom: 25px;
+}
+
+.osnov_pole .info_pole .opedelenie_for_info_pole p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: var(--color_text_in_zagolovok_in_bok_menu);
+    font-size: 20px;
+}
+
+.osnov_pole .info_pole .opedelenie_for_info_pole p vid_zag_opedelenie {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.osnov_pole .info_pole .vashno {
+    width: calc(100% - 120px);
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    box-shadow: 2px 5px 10px black;
+    margin-bottom: 25px;
+}
+
+.osnov_pole .info_pole .vashno div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/*Цвет ячейки для "Важно"*/
+
+.osnov_pole .info_pole .vashno .vid_zag_vashno {
+    height: inherit;
+    background: var(--color_for_fon_in_spisok_bok_menu2);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-weight: 700;
+    user-select: none;
+}
+
+
+/*Цвет ячейки для "Примера"*/
+
+.osnov_pole .info_pole .vashno .vid_zag_vashno_dop {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.osnov_pole .info_pole .vashno div:last-of-type {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.osnov_pole .info_pole .spisok_perechislenie {
+    display: block;
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-bottom: 25px;
+}
+
+.osnov_pole .info_pole .spisok_perechislenie li {
+    margin-bottom: 15px;
+    list-style-type: decimal-leading-zero;
+}
+
+.osnov_pole .info_pole .information_okno_for_info_panel {
+    width: calc(100% - 240px);
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 25px;
+    outline: 3px solid var(--color_outline_information_okno_in_infp_pole);
+    box-shadow: 2px 5px 10px black;
+}
+
+.osnov_pole .info_pole .information_okno_for_info_panel p {
+    padding: 15px;
+}
+
+.osnov_pole .info_pole .information_okno_v2_for_info_panel {
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: "Fjalla One";
+    font-size: 35px;
+    user-select: none;
+}
+
+.vashnoe_videlenie {
+    background: var(--color_for_fon_in_spisok_bok_menu2);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--color_text_hover_in_spisok_bok_menu);
+    padding: 10px;
+}
+
+.perehod_in_page {
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.perehod_in_page form input {
+    padding: 5px;
+    width: 70px;
+    background: var(--fon_zagolovok_in_bok_menu);
+    color: var(--color_text_in_zagolovok_in_bok_menu);
+    border: 0;
+    cursor: pointer;
+}
+
+.perehod_in_page form input:active {
+    filter: brightness(80%);
+}
+
+.perehod_in_page form input:disabled {
+    background-color: gray;
+    cursor: default;
+}
+
+.perehod_in_page form input:active:disabled {
+    filter: brightness(100%);
+}
+
+.perehod_in_page form {
+    float: left;
+    padding-bottom: 50px;
+}
+
+.perehod_in_page form:first-of-type {
+    margin-right: 50px;
+}

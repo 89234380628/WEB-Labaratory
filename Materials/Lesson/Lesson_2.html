@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="../../Basic CSS/CSS_for_page.css">
+    <link rel="stylesheet" href="../../Menu/style_for_top_menu.css">
+
+    <!--Media CSS-->
+    <link rel="stylesheet" href="../../Basic CSS/media_for_style_for_page.css">
+
+    <!--Библиотека CSS бокового меню-->
+    <link rel="stylesheet" href="../../Menu/style_for_bok_menu.css">
+    <!-------------------------------->
+
+    <!--Linlk Script library-->
+    <script src="../../Script_library/link_html.js"></script>
+
+
+    <!--Link CSS_fonts-->
+    <link rel="stylesheet" href="../../Fonts/CSS_fonts.css">
+    <!------------------->
+
+    <!--Link CSS color-->
+    <link rel="stylesheet" href="../../Basic CSS/Color/Light_color_for_css.css">
+    <!------------------->
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../Favicon/Favicon.png" type="image/png">
+    <!------------------->
+
+    <title>Урок 2. Знакомство с HTML</title>
+
+</head>
+
+<body>
+    <!--LINK SCRIPT-->
+    <script>
+        $(function() {
+            $("#conteyner_for_bok_menu").load("./bok_menu2.html");
+            $("#conteyner_for_mobile__bok_menu").load("./mobile_menu2.html");
+            $("#conteyner_for_top_menu").load("./top_menu2.html");
+        });
+    </script>
+    <script src="../../Script_library/script_mobile_menu.js"></script>
+
+    <div id="conteyner_for_mobile__bok_menu"></div>
+    <div id="conteyner_for_top_menu"></div>
+
+    <div class="osnov_pole">
+        <!--Link DOM menu-->
+        <div id="conteyner_for_bok_menu"></div>
+        <!--<div id="conteyner_for_mobile__bok_menu"></div>-->
+
+        <div class="info_pole">
+        </div>
+    </div>
+
+</body>
+
+</html>

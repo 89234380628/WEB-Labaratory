@@ -1,0 +1,46 @@
+/*Шрифт для заголовка бокового меню*/
+
+@font-face {
+    font-family: "Acme";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: /* Если не получилось, загрузит woff2 */
+    url("./Library/Acme/Acme-Regular.ttf")format("woff2");
+}
+
+
+/*Шрифт для списка бокового меню*/
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: italic;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: /* Если не получилось, загрузит woff2 */
+    url("./Library/Vollkorn/Vollkorn-Italic-VariableFont_wght.ttf")format("woff2");
+}
+
+
+/*Шрифт для заголовка в информационном поле*/
+
+@font-face {
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: /* Если не получилось, загрузит woff2 */
+    url("./Library/Russo_One/RussoOne-Regular.ttf")format("woff2");
+}
+
+
+/*Шрифт для информационного окна v2 в информационном поле*/
+
+@font-face {
+    font-family: "Fjalla One";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: /* Если не получилось, загрузит woff2 */
+    url("./Library/Fjalla_One/FjallaOne-Regular.ttf")format("woff2");
+}

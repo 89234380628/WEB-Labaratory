@@ -1,0 +1,33 @@
+:root {
+    /*Цвета для фона основных страниц*/
+    --color_for_fon_page1: #a8ff78;
+    --color_for_fon_page2: #78ffd6;
+    /*-------------------------------*/
+    /*Цвета фона для информационных панелей*/
+    --color_for_info_pole: rgb(255, 255, 255, 0.8);
+    --color_for_bok_menu: rgb(255, 255, 255, 0.7);
+    /*-------------------------------*/
+    /*Цвета заголовка в боковом меню*/
+    --fon_zagolovok_in_bok_menu: #00649b;
+    --color_text_in_zagolovok_in_bok_menu: white;
+    /*-------------------------------*/
+    /*Цвета списков в боковом меню и в главном заголовке информационного окна*/
+    --color_text_in_spisok_bok_menu: black;
+    --linier_border_bottom_in_spisok_bok_menu: gray;
+    --color_for_fon_in_spisok_bok_menu1: #ED213A;
+    --color_for_fon_in_spisok_bok_menu2: #93291E;
+    --color_text_hover_in_spisok_bok_menu: white;
+    --color_text_shadow_in_spisok_bok_menu: black;
+    /*-------------------------------*/
+    /*Основные цвета в информационной панели*/
+    --osnov_color_in_info_pole: black;
+    /*-------------------------------*/
+    /*Цвет обводки информационного окна в информационном поле*/
+    --color_outline_information_okno_in_infp_pole: black;
+    /*Цвет мобильного значка меню*/
+    --color_mobile_icon_menu: white;
+    --color_mobile_fon_icon_menu: #243B55;
+    --color_mobile_fon_icon_menu_active: #ED213A;
+    /*Цвет фона мобильного меню*/
+    --color_fon_mobile_menu: rgb(36, 59, 85, 0.9);
+}

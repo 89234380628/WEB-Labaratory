@@ -1,0 +1,223 @@
+/*Destop CSS*/
+
+#conteyner_for_bok_menu {
+    height: 80%;
+    width: 250px;
+    margin-right: 50px;
+    background: var(--color_for_bok_menu);
+    border-radius: 25px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+#conteyner_for_bok_menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.zagolovok {
+    position: relative;
+    border-radius: 25px 25px 0 0;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: var(--fon_zagolovok_in_bok_menu);
+    color: var(--color_text_in_zagolovok_in_bok_menu);
+    user-select: none;
+    font-family: "Acme";
+    font-weight: 700;
+}
+
+.bok_menu ul a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--color_text_in_spisok_bok_menu);
+    font-size: 18px;
+    font-family: "Vollkorn";
+}
+
+.bok_menu ul li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid var(--linier_border_bottom_in_spisok_bok_menu);
+    user-select: none;
+}
+
+.bok_menu ul a li:hover {
+    background: var(--color_for_fon_in_spisok_bok_menu1);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--color_text_hover_in_spisok_bok_menu);
+    font-weight: 700;
+    text-shadow: 2px 7px 7px var(--color_text_shadow_in_spisok_bok_menu);
+}
+
+.bok_menu ul a li:active {
+    filter: brightness(80%);
+}
+
+.bok_menu ul a:last-of-type li {
+    border: 0;
+}
+
+
+/*Mobile CSS*/
+
+.mobile_bok_menu {
+    position: relative;
+    width: max-content;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+    margin-left: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color_mobile_fon_icon_menu);
+    border-radius: 50%;
+}
+
+.mobile_bok_menu svg {
+    fill: var(--color_mobile_icon_menu);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.mobile_bok_menu:active {
+    background: var(--color_mobile_fon_icon_menu_active);
+}
+
+.open_okno_mobile_bok_menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    background: var(--color_fon_mobile_menu);
+    filter: blur(20%);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.open_okno_mobile_bok_menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+@media screen and (max-width:399px) {
+    .mobile_bok_menu {
+        padding: 5px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+}
+
+.open_okno_mobile_bok_menu #vid1:first-of-type .mobile_menu_lesson_podmenu {
+    margin-top: 50%;
+}
+
+.open_okno_mobile_bok_menu .mobile_menu_lesson_podmenu {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #ED213A;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    font-family: "Acme";
+    font-size: 20px;
+}
+
+.open_okno_mobile_bok_menu .mobile_menu_lesson_podmenu:active {
+    background: #033956;
+}
+
+.open_okno_mobile_bok_menu a {
+    text-decoration: none;
+}
+
+a .mobile_menu_lesson_podmenu p {
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    font-family: "Acme";
+}
+
+#leson_spisok_menu_id {
+    display: none;
+}
+
+#kurs_web div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#kurs_web div p {
+    width: 80%;
+    text-align: center;
+}
+
+#kurs_web #svg1 {
+    display: none;
+}
+
+
+/*CSS for podspisok lesson punkt*/
+
+.leson_spisok_menu ul a {
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    background: black;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+}
+
+.leson_spisok_menu ul a li {
+    color: white;
+    list-style-type: none;
+}
+
+.leson_spisok_menu ul a:active {
+    filter: brightness(80%);
+}
+
+
+/*Close button in mobile menu*/
+
+.open_okno_mobile_bok_menu svg:first-of-type {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    fill: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:290px) {
+    .open_okno_mobile_bok_menu .mobile_menu_lesson_podmenu {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
