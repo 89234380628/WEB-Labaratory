@@ -55,7 +55,7 @@ header("HTTP/1.0 404 Not Found")
     .out1,.out2{
         position: absolute;
         text-align: center;
-        width: 100%;
+        width: calc(100% - 10px);
         display: block;
         margin: 0 auto;
         font-size: 40px;
@@ -63,8 +63,8 @@ header("HTTP/1.0 404 Not Found")
         cursor: default;
         user-select: none;
         line-height: 50px;
-        margin-left: 5px;
-        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
 
     }
     .out1{
@@ -93,6 +93,7 @@ a{
     }
 
     a .button_for_page:hover{
+        transition-delay: 0.1s;
         box-shadow: 5px 3px 5px black;
     }
 
@@ -131,6 +132,7 @@ a{
     }
         .block_for_gif{
             margin-top: 30%;
+            width:100%;
         }
 }
 
@@ -144,8 +146,9 @@ a{
         .out2{
         top: 20%;
     }
-        .block_for_gif{
+    .block_for_gif{
             margin-top: 30%;
+            width:100%;
         }
 }
 
@@ -159,8 +162,9 @@ a{
         .out2{
         top: 20%;
     }
-        .block_for_gif{
-            margin-top: 50%;
+    .block_for_gif{
+            margin-top: 30%;
+            width:100%;
         }
 }
 
@@ -174,8 +178,9 @@ a{
         .out2{
         top: 15%;
     }
-        .block_for_gif{
-            margin-top: 50%;
+    .block_for_gif{
+            margin-top: 30%;
+            width:100%;
         }
         .button_for_page{
             font-size: 16px;

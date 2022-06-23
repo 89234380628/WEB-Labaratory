@@ -11,13 +11,14 @@
 }
 
 .block_for_top_menu a div {
-    width: 250px;
+    width: 150px;
     text-align: center;
     padding: 5px;
     font-family: "Acme";
     font-weight: 700;
-    clip-path: polygon(25% 0%, 100% 0%, 82% 100%, 4% 100%);
     background: var(--fon_zagolovok_in_bok_menu);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .block_for_top_menu a:hover {
@@ -35,4 +36,18 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, var(--color_for_fon_in_spisok_bok_menu2), var(--color_for_fon_in_spisok_bok_menu1));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 5px 5px 10px black;
+    transition: 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.block_for_top_menu a:first-of-type div:hover {
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.block_for_top_menu a:last-of-type div:hover {
+    transition: 0.3s;
+    margin-left: 10px;
 }
