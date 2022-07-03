@@ -1,5 +1,7 @@
 .osnov_pole .info_pole .image_web_html_css_js {
     display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -8,17 +10,6 @@
 .osnov_pole .info_pole .image_web_html_css_js img {
     width: 600px;
     height: 300px;
-}
-
-.osnov_pole .info_pole .podokno_for_information_okno_v2_for_info_panel {
-    width: calc(100% - 240px);
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 25px;
-}
-
-.osnov_pole .info_pole .podokno_for_information_okno_v2_for_info_panel p {
-    text-align: center;
 }
 
 

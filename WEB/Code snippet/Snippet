@@ -1,3 +1,12 @@
+
+<!--Начальный заголовок поля-->
+            <div class="zagolovok_bok_menu_for_info_pole">
+                <p>Урок 1. Введение в WEB - разработку</p>
+            </div>
+
+<!--Подзаголовок-->
+<p class="zagolovok_info_pole">Text</p>
+
 <!--Контейнеры с определениями-->
             <div class="opedelenie_for_info_pole">
                 <p>
@@ -42,3 +51,93 @@
                     <input type="submit" value="Дальше">
                 </form>
             </div>
+
+<!--Обычный текст в инфо окне-->
+<div class="podokno_for_information_okno_v2_for_info_panel">
+</div>
+
+            <!--Example panel for code_V1-->
+            <!--Style Darkula-->
+            <div class="panel_code">
+
+                <div class="trigger_for_panel_code">
+                    <form action="#">
+                        <input type="submit" value="HTML" onclick="Button_panel_cod_for_HTML()">
+                    </form>
+
+                    <form action="#">
+                        <input type="submit" value="CSS" onclick="Button_panel_cod_for_CSS()">
+                    </form>
+
+                    <form action="#">
+                        <input type="submit" value="JS" onclick="Button_panel_cod_for_JS()" disabled>
+                    </form>
+                </div>
+
+                <div id="panel_cod_for_HTML"></div>
+
+                <div id="panel_cod_for_CSS"></div>
+
+                <div id="panel_cod_for_JS"></div>
+
+            </div>
+            <script src="/WEB/Script_library/panel_code.js"></script>
+
+
+            <!--Example panel for code_V2-->
+
+    <!--Style for code panel-->
+    <link href="/WEB/Script_library/Theme_code/them.css" rel="stylesheet" type="text/css">
+    <!------------------->
+    ...
+
+                        <div class="panel_code">
+
+                <div class="trigger_for_panel_code">
+                    <form action="#">
+                        <input type="submit" value="HTML" onclick="Button_panel_cod_for_HTML()">
+                    </form>
+
+                    <form action="#">
+                        <input type="submit" value="CSS" onclick="Button_panel_cod_for_CSS()" disabled>
+                    </form>
+
+                    <form action="#">
+                        <input type="submit" value="JS" onclick="Button_panel_cod_for_JS()" disabled>
+                    </form>
+                </div>
+
+                <!--Сама панель кода-->
+                <div id="panel_cod_for_HTML">
+                    <pre><code data-language="html"></code></pre>
+                </div>
+
+                <div id="panel_cod_for_CSS">
+                <pre><code data-language="css"></code></pre>
+                </div>
+
+                <div id="panel_cod_for_JS">
+                <pre><code data-language="js"></code></pre>
+                </div>
+
+            </div>
+            <script src="/WEB/Script_library/Theme_code/rainbow-custom.min.js"></script>
+            <script src="/WEB/Script_library/Theme_code/style_html"></script>
+            <script src="/WEB/Script_library/Theme_code/style_css"></script>
+            <script src="/WEB/Script_library/Theme_code/style_js"></script>
+
+            <!--Объяснение кода в panel code-->
+            <div class="block_for_panel_code">
+                <div class="text_in_block_for_panel_code">
+                   
+                </div>
+            </div>
+            <!-------------------------------->
+
+<!--Table-->
+<div class="block_table">
+        <table>
+        ...
+        </table>
+</div>
+<!--------->

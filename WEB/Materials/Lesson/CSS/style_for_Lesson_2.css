@@ -1,0 +1,35 @@
+/*Окрас кнопки для раскрытия списка таблицы lang*/
+
+.okras_table_lang .button_spisok {
+    display: block;
+    width: max-content;
+    background-color: antiquewhite;
+    color: chocolate;
+    font-weight: 900;
+    padding: 10px 60px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    user-select: none;
+}
+
+.okras_table_lang .button_spisok:hover {
+    transition-delay: 0.1s;
+    cursor: pointer;
+    outline: 2px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.okras_table_lang .button_spisok:active {
+    filter: brightness(80%);
+}
+
+.okras_table_lang #table_spisok_lang,
+#table_spisok_code {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    display: none;
+}
+
+
+/******************************************/

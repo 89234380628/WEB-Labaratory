@@ -94,3 +94,16 @@
         display: block;
     }
 }
+
+@media screen and (max-width:474px) {
+    .panel_code .trigger_for_panel_code form input {
+        font-size: 14px;
+        width: 60px;
+    }
+    .panel_code .trigger_for_panel_code form {
+        margin-right: 5px;
+    }
+    .panel_code .trigger_for_panel_code {
+        flex-wrap: wrap;
+    }
+}

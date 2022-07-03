@@ -197,8 +197,8 @@ a{
         Ни чего страшного не произошло, просто данной страницы не существует :)
     </div>
 <div class="block_for_gif"></div>
-<a href="/WEB/start_page.html"><div class="button_for_page">
-    Отбыть к началу
+<a onclick="javascript:history.back(-2); return false;"><div class="button_for_page">
+    Отбыть туда откуда пришел
 </div></a>
 </body>
 </html>
